@@ -27,11 +27,11 @@ app.post('/gift', (req, res) => {
 
   // TODO: prove that a name is in the list 
   function isInTheList(){
-    if(verifyProof(proof, name, MERKLE_ROOT)){
-      return true;
-    }
+    const v = verifyProof(proof, name, MERKLE_ROOT);
+    return v;
+    
   }
-  if(isInTheList) {
+  if(isInTheList()) {
     res.send("You got a toy robot!");
   }
   else {
