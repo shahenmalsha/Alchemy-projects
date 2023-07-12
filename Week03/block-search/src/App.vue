@@ -11,7 +11,7 @@
     </div>
 
     <div class="container">
-      <h2>This is the container at the bottom</h2>
+      <h2>B Container</h2>
       <div v-if="searchResult">
         <p class="block-info-line"><strong>BaseFeePerGas:</strong> {{ formatResult(searchResult) }}</p>
         <p class="block-info-line"><strong>Difficulty:</strong> {{ formatResult(searchResult1) }}</p>
